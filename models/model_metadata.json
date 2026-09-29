@@ -1,0 +1,192 @@
+{
+  "model_name": "Logistic Regression",
+  "model_version": "1.0",
+  "input_features": [
+    "Farm Size (ha)",
+    "Planting Type",
+    "Average Yield (tons/ha)",
+    "Crop Yield (tons)",
+    "Average Selling Price (₱/kg)",
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Subsidy Received"
+  ],
+  "api_feature_mapping": {
+    "farm_size": "Farm Size (ha)",
+    "planting_type": "Planting Type",
+    "average_yield": "Average Yield (tons/ha)",
+    "crop_yield": "Crop Yield (tons)",
+    "average_selling_price": "Average Selling Price (₱/kg)",
+    "q1": "Q1",
+    "q2": "Q2",
+    "q3": "Q3",
+    "q4": "Q4",
+    "q5": "Q5",
+    "q6": "Q6",
+    "q7": "Q7",
+    "q8": "Q8",
+    "q9": "Q9",
+    "q10": "Q10",
+    "subsidy_received": "Subsidy Received"
+  },
+  "selected_features": [
+    "Farm Size (ha)",
+    "Planting Type",
+    "Average Yield (tons/ha)",
+    "Crop Yield (tons)",
+    "Average Selling Price (₱/kg)",
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Subsidy Received"
+  ],
+  "derived_features": [
+    "yield_per_hectare",
+    "questionnaire_average"
+  ],
+  "excluded_features": {},
+  "target_classes": [
+    "High",
+    "Low",
+    "Moderate"
+  ],
+  "label_mapping": {
+    "0": "Low",
+    "1": "Moderate",
+    "2": "High"
+  },
+  "accuracy": 0.9625,
+  "precision": 0.9636118598382749,
+  "recall": 0.9624970882832518,
+  "f1_score": 0.9628293090557242,
+  "confusion_matrix": [
+    [
+      51,
+      0,
+      2
+    ],
+    [
+      0,
+      51,
+      2
+    ],
+    [
+      2,
+      0,
+      52
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "High",
+    "Low",
+    "Moderate"
+  ],
+  "metric_average": "macro",
+  "dataset_size": 798,
+  "training_size": 638,
+  "test_size": 160,
+  "random_state": 42,
+  "training_date": "2026-09-28T06:20:40.579050+00:00",
+  "sklearn_version": "1.9.1",
+  "validation": {
+    "duplicates_removed": 0,
+    "missing_values": {
+      "Farm Size (ha)": 0,
+      "Planting Type": 0,
+      "Average Yield (tons/ha)": 0,
+      "Crop Yield (tons)": 0,
+      "Average Selling Price (₱/kg)": 0,
+      "Q1": 0,
+      "Q2": 0,
+      "Q3": 0,
+      "Q4": 0,
+      "Q5": 0,
+      "Q6": 0,
+      "Q7": 0,
+      "Q8": 0,
+      "Q9": 0,
+      "Q10": 0,
+      "Subsidy Received": 0,
+      "Effectiveness Label": 0
+    },
+    "target_distribution": {
+      "Low": 266,
+      "High": 266,
+      "Moderate": 266
+    }
+  },
+  "model_comparison": {
+    "Logistic Regression": {
+      "accuracy": 0.9625,
+      "precision": 0.9636118598382749,
+      "recall": 0.9624970882832518,
+      "f1_score": 0.9628293090557242,
+      "confusion_matrix": [
+        [
+          51,
+          0,
+          2
+        ],
+        [
+          0,
+          51,
+          2
+        ],
+        [
+          2,
+          0,
+          52
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "High",
+        "Low",
+        "Moderate"
+      ]
+    },
+    "Random Forest": {
+      "accuracy": 0.8125,
+      "precision": 0.8130677847658979,
+      "recall": 0.8130677847658979,
+      "f1_score": 0.8130677847658979,
+      "confusion_matrix": [
+        [
+          46,
+          0,
+          7
+        ],
+        [
+          0,
+          45,
+          8
+        ],
+        [
+          7,
+          8,
+          39
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "High",
+        "Low",
+        "Moderate"
+      ]
+    }
+  },
+  "evaluation_note": "Metrics use the held-out 20%; selected pipeline remains fitted on the 80% training split."
+}

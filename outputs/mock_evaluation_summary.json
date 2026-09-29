@@ -1,0 +1,29 @@
+{
+  "evaluation_summary": {
+    "total_respondents": 30,
+    "overall_effectiveness": "Low",
+    "overall_confidence": 49.71,
+    "average_yield_per_hectare": 5.6,
+    "average_questionnaire_score": 3.12
+  },
+  "model_distribution": {
+    "Low": 49.71,
+    "Moderate": 7.55,
+    "High": 42.74
+  },
+  "prediction_distribution": {
+    "Low": {
+      "count": 15,
+      "percentage": 50.0
+    },
+    "Moderate": {
+      "count": 2,
+      "percentage": 6.67
+    },
+    "High": {
+      "count": 13,
+      "percentage": 43.33
+    }
+  },
+  "summary": "The seedling subsidy evaluation was classified as Low Effectiveness based on the combined evaluation records of 30 respondents. The model produced an overall confidence of 49.71% for the low effectiveness classification. Respondents recorded an average questionnaire score of 3.12 and an average yield per hectare of 5.60 tons/ha. Of the 30 evaluation records, 2 were classified as moderate, 13 as high, and 15 as low effectiveness."
+}
